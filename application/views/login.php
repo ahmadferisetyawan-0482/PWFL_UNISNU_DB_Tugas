@@ -24,20 +24,20 @@
 			<a href="<?= base_url() ?>assets/index2.html"><b>Admin</b>LTE</a>
 		</div>
 		<div class="login-box-body">
-			<p class="login-box-msg">Sign in to start your session</p>
-			<form action="<?= base_url() ?>assets/index2.html" method="post">
+			<p class="login-box-msg"></p>
+			<form action="<?= base_url('login/proses') ?>" method="post">
 				<div class="form-group has-feedback">
-					<input type="email" class="form-control" placeholder="Email">
-					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+					<input type="text" name="username" class="form-control" placeholder="Username" required>
+					<span class="glyphicon glyphicon-user form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback">
-					<input type="password" class="form-control" placeholder="Password">
+					<input type="password" name="password" class="form-control" placeholder="Password" required>
 					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 				</div>
 				<div class="row">
 					<div class="col-xs-8"></div>
 					<div class="col-xs-4">
-						<button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+						<button type="submit" name="login" class="btn btn-primary btn-block btn-flat">Masuk</button>
 					</div>
 				</div>
 			</form>
