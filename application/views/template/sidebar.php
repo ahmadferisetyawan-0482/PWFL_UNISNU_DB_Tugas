@@ -24,6 +24,7 @@
 			<li><a href="<?= base_url(); ?>mahasiswa"><i class="fa fa-database"></i> <span>Data Mahasiswa</span></a></li>
 			<li><a href="<?= base_url(); ?>mahasiswa/log"><i class="fa fa-database"></i> <span>Riwayat</span></a></li>
 			<li><a href="<?= base_url(); ?>user"><i class="fa fa-database"></i> <span>Serverside</span></a></li>
+			<li><a href="<?= base_url(); ?>chart"><i class="fa fa-database"></i> <span>Chart</span></a></li>
 			<!-- <li class="treeview">
 				<a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
 					<span class="pull-right-container">

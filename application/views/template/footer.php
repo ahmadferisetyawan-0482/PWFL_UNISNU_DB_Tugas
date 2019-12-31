@@ -65,7 +65,11 @@
 <script src="<?= base_url() ?>assets/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="<?= base_url() ?>assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <script src="<?= base_url() ?>assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?= base_url() ?>assets/bower_components/raphael/raphael.min.js"></script>
+<script src="<?= base_url() ?>assets/bower_components/morris.js/morris.min.js"></script>
 <script src="<?= base_url() ?>assets/bower_components/fastclick/lib/fastclick.js"></script>
+
+
 <script src="<?= base_url() ?>assets/dist/js/demo.js"></script>
 <script>
 	$(function() {
@@ -79,6 +83,15 @@
 		// 	'autoWidth': false
 		// })
 	})
+</script>
+<script>
+	Morris.Bar({
+		element: 'graph',
+		data: <?= $data; ?>,
+		xkey: 'year',
+		ykeys: ['purchase', 'sale', 'profit'],
+		labels: ['Purchase', 'Sale', 'Profit']
+	});
 </script>
 </body>
 
